@@ -1,9 +1,11 @@
 const webpack = require('webpack')
+const withCSS = require('@zeit/next-css')
 
 const isProd = (process.env.NODE_ENV || 'production') === 'production'
 
 const assetPrefix = isProd ? '/blog-next' : ''
 
+module.exports = withCSS()
 module.exports = {
     // exportPathMap: () => ({
     //     '/': { page: '/' },

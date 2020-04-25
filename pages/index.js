@@ -1,24 +1,25 @@
-import Link from 'next/link'
+// import Link from 'next/link'
+import { parse } from 'node-html-parser';
 
 import Layout from './../components/Layout';
 
-var _ = require('lodash');
-
 import { getAllPostIds, getPostData } from '../lib/posts'
 
-const Post = (post) => {
+const Post = ({params}) => {
+  const contentHtml = () => {
+    const root = parse(params.contentHtml);
+    const original_title_str = root.querySelector('h1').toString();
+    const title = root.querySelector('h1');
+    title.set_content(`<a href="${process.env.ASSET_PREFIX+ `/posts/${params.id}`}" >${title.innerHTML}</a>`)
+    console.log('contentHtml',original_title_str, title.toString())
+    return params.contentHtml.replace(original_title_str, title.toString());
+  }
   return (
-    <div className="mb-4">
-      <h4 className="mb-0">
-        <Link href={`/posts/${post.params.slug}`} as={process.env.ASSET_PREFIX+ `/posts/${post.params.id}`} >
-          {post.params.title}
-        </Link>
-      </h4>
-      <small>{post.params.date}</small>
-      <p>
-        {post.params.description}
-      </p>
-      <hr />
+    <div className="mb-5">
+      <div className="d-flex w-100 justify-content-end">
+        <small className="text-secondary" >{params.date}</small>
+      </div>
+      <div className="post" dangerouslySetInnerHTML={{ __html: contentHtml() }} />
     </div>
   )
 }
@@ -49,6 +50,11 @@ export async function getStaticProps() {
     var dateB = new Date(b.params.date);
     return  dateB - dateA;
   })
+
+  for (let index = 0; index < posts.length; index++) {
+    const post = posts[index];
+    posts[index].params.contentHtml =  (await getPostData(post.params.id)).contentHtml
+  }
 
   return {
     props: {

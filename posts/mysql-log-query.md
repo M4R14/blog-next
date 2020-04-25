@@ -16,8 +16,8 @@ date: '2020-05-25'
     ```sql
     SET GLOBAL long_query_time = 3; 
     ```
-1. หนดเวลาตำแหน่งตของ Log หากไม่กำหนดค่าเริ่มต้นจะอยู่ที่ ‘/var/lib/mysql/hostname-slow.log’
-    ```sql
-    SET GLOBAL slow_query_log_file = ‘/path/filename’; 
-    ```
+1. หนดเวลาตำแหน่งตของ Log หากไม่กำหนดค่าเริ่มต้นจะอยู่ที่ `/var/lib/mysql/hostname-slow.log`
+  ```sql
+  SET GLOBAL slow_query_log_file = ‘/path/filename’; 
+  ```
 อ้างอิง: [https://www.a2hosting.com/kb/developer-corner/mysql/enabling-the-slow-query-log-in-mysql](https://www.a2hosting.com/kb/developer-corner/mysql/enabling-the-slow-query-log-in-mysql)

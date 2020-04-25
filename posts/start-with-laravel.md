@@ -9,7 +9,7 @@ date: '2020-05-25'
 วิธีที่ผมใช้นี้มีแค่ Docker ก็เพียงพอแล้ว สำหรับการเริ่มต้นโปรเจค
 
 1. ติดตั้ง Laravel ด้วย
-    ```.sh
+    ```sh
     $ docker run --rm --interactive --tty \\  
         --volume $PWD:/app \\  
         composer create-project --prefer-dist laravel/laravel laravel-blog
@@ -31,12 +31,12 @@ date: '2020-05-25'
         - Database Password: 123456
 
 1. แตกไฟล์ laravel-blog.zip
-    ```.sh
+    ```sh
     $ unzip laravel-blog.zip 
     $ mv laravel-blog/* /<project_path>/aravel-blog
     ```
 1. แก้ไข้ .env
-    ```.env
+    ```env
     DB_CONNECTION=mysql 
     DB_HOST=msql 
     DB_PORT=3306 

@@ -16,14 +16,7 @@ export default function Post({ postData }) {
         <br />
         date: {postData.date}
         <br /> */}
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        <style jsx >{`
-          pre {
-            background-color: darkgray;
-            padding: 1em;
-            color: white;
-          }
-        `}</style>
+        <div className="post" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>
   )
 }

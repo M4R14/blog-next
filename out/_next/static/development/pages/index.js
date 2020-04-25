@@ -9971,7 +9971,7 @@ module.exports = Function.prototype.bind || implementation;
 "use strict";
 
 
-const fs = __webpack_require__(/*! fs */ 3);
+const fs = __webpack_require__(/*! fs */ 2);
 const sections = __webpack_require__(/*! section-matter */ "./node_modules/section-matter/index.js");
 const defaults = __webpack_require__(/*! ./lib/defaults */ "./node_modules/gray-matter/lib/defaults.js");
 const stringify = __webpack_require__(/*! ./lib/stringify */ "./node_modules/gray-matter/lib/stringify.js");
@@ -35296,6 +35296,7 @@ var Post = function Post(post) {
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/posts/".concat(post.params.id),
+    as: "" + "/posts/".concat(post.params.id),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -35363,7 +35364,7 @@ function Home(_ref2) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!********************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Feakarin%2Fwork%2Fblog%2Fpages%2Findex.js ***!
   \********************************************************************************************************************/
@@ -35375,7 +35376,7 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!********************!*\
   !*** fs (ignored) ***!
   \********************/
@@ -35397,5 +35398,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

@@ -16,7 +16,7 @@ const Layout = (props) => (
       }} >
         <div className="container" >
           <div className="">
-            <Link href="/">
+            <Link href="/" as={process.env.ASSET_PREFIX}>
               <h1 className="logo" > Open Blog </h1>
             </Link>
           </div>

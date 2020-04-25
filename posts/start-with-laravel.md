@@ -1,6 +1,7 @@
 ---
-title: Hello
-slug: home
+title: ติดตั้ง Laravel ด้วย Docker สำหรับ Dev
+slug: ติดตั้ง Laravel ด้วย Docker สำหรับ Dev
+description: ติดตั้ง Laravel ด้วย Docker สำหรับ Dev วิธีที่ผมใช้นี้มีแค่ Docker ก็เพียงพอแล้ว สำหรับการเริ่มต้นโปรเจค
 date: '2020-05-25'
 ---
 # ติดตั้ง Laravel ด้วย Docker สำหรับ Dev
@@ -15,7 +16,6 @@ date: '2020-05-25'
     ```
 1. เข้า [phpdocker.io](https://phpdocker.io/generator) เพื่อสร้างไฟล์ 
 `docker-compose.yml` ตั้งชื่อโปรเจค “laravel-blog” แล้วกด “Generate project archive” จะได้รับ “laravel-blog.zip”
-
     - Global configuration
         - Project name : laravel-blog
         - Base port: 8080

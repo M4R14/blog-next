@@ -24,14 +24,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var Layout = function Layout(props) {
-  return __jsx("div", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 3
-    }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -73,116 +66,110 @@ var Layout = function Layout(props) {
       columnNumber: 5
     }
   }, __jsx("div", {
-    className: "py-3",
+    className: "py-3 d-flex align-items-center",
+    style: {
+      borderBottom: 'solid 1px #dee2e6',
+      marginBottom: '3em',
+      height: '8em'
+    },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12,
       columnNumber: 7
     }
-  }, __jsx("h1", {
-    className: "text-center",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 9
-    }
-  }, "Open Blog"), __jsx("ul", {
-    className: "nav justify-content-center",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 9
-    }
-  }, __jsx("li", {
-    className: "nav-item",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 11
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/about",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 13
-    }
-  }, __jsx("a", {
-    className: "nav-link active",
-    href: "#",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 15
-    }
-  }, "About Us"))), __jsx("li", {
-    className: "nav-item",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 11
-    }
-  }, __jsx("a", {
-    className: "nav-link",
-    href: "#",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 13
-    }
-  }, "Link")), __jsx("li", {
-    className: "nav-item",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 11
-    }
-  }, __jsx("a", {
-    className: "nav-link",
-    href: "#",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 13
-    }
-  }, "Link")), __jsx("li", {
-    className: "nav-item",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 11
-    }
-  }, __jsx("a", {
-    className: "nav-link disabled",
-    href: "#",
-    tabIndex: "-1",
-    "aria-disabled": "true",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 13
-    }
-  }, "Disabled")))), __jsx("main", {
+  }, __jsx("div", {
     className: "container",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 17,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    className: "",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 11
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 13
+    }
+  }, __jsx("h1", {
+    className: "logo",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 15
+    }
+  }, " Open Blog "))))), __jsx("main", {
+    className: "container",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
       columnNumber: 7
     }
-  }, props.children)));
+  }, __jsx("div", {
+    className: "row",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    className: "col-9",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 11
+    }
+  }, props.children), __jsx("div", {
+    className: "col-3",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 11
+    }
+  })))), __jsx("footer", {
+    className: "d-flex align-items-center",
+    style: {
+      height: '8em'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: "container",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 7
+    }
+  }, __jsx("p", {
+    className: "text-secondary",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 9
+    }
+  }, "vachirawit.mark@gmail.com"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);

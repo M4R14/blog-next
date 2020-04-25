@@ -5,9 +5,9 @@ const isProd = (process.env.NODE_ENV || 'production') === 'production'
 const assetPrefix = isProd ? '/blog-next' : ''
 
 module.exports = {
-    exportPathMap: () => ({
-        '/': { page: '/' },
-      }),
+    // exportPathMap: () => ({
+    //     '/': { page: '/' },
+    //   }),
       assetPrefix: assetPrefix,
       webpack: config => {
         config.node = { fs: 'empty' };

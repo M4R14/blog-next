@@ -38,7 +38,7 @@ var Layout = function Layout(props) {
       lineNumber: 7,
       columnNumber: 7
     }
-  }, "PairHub"), __jsx("meta", {
+  }, "Open Blog "), __jsx("meta", {
     name: "viewport",
     content: "initial-scale=1.0, width=device-width",
     __self: _this,
@@ -5885,7 +5885,7 @@ function Post(_ref) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 1:
 /*!***********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fposts%2F%5Bid%5D&absolutePagePath=%2FUsers%2Feakarin%2Fwork%2Fblog%2Fpages%2Fposts%2F%5Bid%5D.js ***!
   \***********************************************************************************************************************************************/
@@ -5908,5 +5908,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

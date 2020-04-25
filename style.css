@@ -1,0 +1,32 @@
+body {
+    font-size: 16px;
+}
+
+.header {
+    border-bottom: solid 1px #dee2e6;
+    /* margin-bottom: 3em; */
+    height: 8em;
+}
+
+.post pre {
+    background-color: #6c757d ;
+    color: white ;
+    padding: 0.2em 1em ;
+}
+
+.post h1 > a {
+    color: black;
+}
+
+.post a:hover {
+    text-decoration: none;
+}
+
+.post h1 > a:hover {
+    color:#007bff;
+}
+
+
+.post h1 {
+    font-size: 2rem;
+}

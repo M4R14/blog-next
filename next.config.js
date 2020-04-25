@@ -2,7 +2,7 @@ const webpack = require('webpack')
 
 const isProd = (process.env.NODE_ENV || 'production') === 'production'
 
-const assetPrefix = isProd ? '/blog-website' : ''
+const assetPrefix = isProd ? '/blog-next' : ''
 
 module.exports = {
     exportPathMap: () => ({

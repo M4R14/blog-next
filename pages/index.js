@@ -7,7 +7,7 @@ import { getAllPostIds, getPostData } from '../lib/posts'
 const Post = (post) => {
   return (
     <li>
-      <Link href={`/posts/${post.params.id}`} as={process.env.BACKEND_URL+ `/posts/${post.params.id}`} >
+      <Link href={`/posts/${post.params.id}`} as={process.env.ASSET_PREFIX+ `/posts/${post.params.id}`} >
         <a className="nav-link">
           {post.params.id}: {post.params.title}
         </a>

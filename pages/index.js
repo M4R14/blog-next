@@ -1,4 +1,4 @@
-// import Link from 'next/link'
+import Link from 'next/link'
 import { parse } from 'node-html-parser';
 
 import Layout from './../components/Layout';
@@ -11,7 +11,7 @@ const Post = ({params}) => {
     const original_title_str = root.querySelector('h1').toString();
     const title = root.querySelector('h1');
     title.set_content(`<a href="${process.env.ASSET_PREFIX+ `/posts/${params.id}`}" >${title.innerHTML}</a>`)
-    console.log('contentHtml',original_title_str, title.toString())
+    // console.log('contentHtml',original_title_str, title.toString())
     return params.contentHtml.replace(original_title_str, title.toString());
   }
   return (
@@ -38,6 +38,14 @@ export default function Home({ posts }) {
     <Layout>
       <div>
         { posts.map(post => Post(post)) }
+      </div>
+      <hr className="mb-1" />
+      <div className="w-100 text-right">
+        <Link href="/" as={process.env.ASSET_PREFIX} >
+          <a>
+            <i className="fas fa-home"></i>
+          </a>
+        </Link>
       </div>
     </Layout>
   )

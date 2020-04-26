@@ -54,7 +54,16 @@ var Layout = function Layout(props) {
     className: "row"
   }, __jsx("div", {
     className: "col-12 col-lg-9"
-  }, props.children)))), __jsx("footer", {
+  }, props.children, __jsx("hr", {
+    className: "mb-1"
+  }), __jsx("div", {
+    className: "w-100 text-right"
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    as: ""
+  }, __jsx("a", null, __jsx("i", {
+    className: "fas fa-home"
+  })))))))), __jsx("footer", {
     className: "d-flex align-items-center",
     style: {
       height: '8em'
@@ -5372,7 +5381,7 @@ function Post(_ref) {
     title: postData.title,
     description: postData.description
   }), __jsx("div", {
-    className: "post",
+    className: "post mb-5",
     dangerouslySetInnerHTML: {
       __html: postData.contentHtml
     }

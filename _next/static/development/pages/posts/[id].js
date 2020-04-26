@@ -31,6 +31,9 @@ var Layout = function Layout(props) {
     crossorigin: "anonymous"
   }), __jsx("link", {
     rel: "stylesheet",
+    href: "".concat("", "/fontawesome-free-5.13.0-web/css/all.css")
+  }), __jsx("link", {
+    rel: "stylesheet",
     href: "".concat("", "/style.css")
   })), __jsx("div", null, __jsx("div", {
     className: "py-3 d-flex align-items-center header mb-5"
@@ -41,14 +44,16 @@ var Layout = function Layout(props) {
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     as: ""
+  }, __jsx("a", {
+    href: ""
   }, __jsx("h1", {
     className: "logo"
-  }, " Open Blog "))))), __jsx("main", {
+  }, " Open Blog ")))))), __jsx("main", {
     className: "container"
   }, __jsx("div", {
     className: "row"
   }, __jsx("div", {
-    className: "col-9"
+    className: "col-12 col-lg-9"
   }, props.children)))), __jsx("footer", {
     className: "d-flex align-items-center",
     style: {
@@ -5376,7 +5381,7 @@ function Post(_ref) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!***********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fposts%2F%5Bid%5D&absolutePagePath=%2FUsers%2Feakarin%2Fwork%2Fblog%2Fpages%2Fposts%2F%5Bid%5D.js ***!
   \***********************************************************************************************************************************************/
@@ -5399,5 +5404,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

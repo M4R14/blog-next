@@ -31,6 +31,9 @@ var Layout = function Layout(props) {
     crossorigin: "anonymous"
   }), __jsx("link", {
     rel: "stylesheet",
+    href: "".concat("", "/fontawesome-free-5.13.0-web/css/all.css")
+  }), __jsx("link", {
+    rel: "stylesheet",
     href: "".concat("", "/style.css")
   })), __jsx("div", null, __jsx("div", {
     className: "py-3 d-flex align-items-center header mb-5"
@@ -41,14 +44,16 @@ var Layout = function Layout(props) {
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     as: ""
+  }, __jsx("a", {
+    href: ""
   }, __jsx("h1", {
     className: "logo"
-  }, " Open Blog "))))), __jsx("main", {
+  }, " Open Blog ")))))), __jsx("main", {
     className: "container"
   }, __jsx("div", {
     className: "row"
   }, __jsx("div", {
-    className: "col-9"
+    className: "col-12 col-lg-9"
   }, props.children)))), __jsx("footer", {
     className: "d-flex align-items-center",
     style: {
@@ -9845,7 +9850,7 @@ module.exports = Function.prototype.bind || implementation;
 "use strict";
 
 
-const fs = __webpack_require__(/*! fs */ 3);
+const fs = __webpack_require__(/*! fs */ 2);
 const sections = __webpack_require__(/*! section-matter */ "./node_modules/section-matter/index.js");
 const defaults = __webpack_require__(/*! ./lib/defaults */ "./node_modules/gray-matter/lib/defaults.js");
 const stringify = __webpack_require__(/*! ./lib/stringify */ "./node_modules/gray-matter/lib/stringify.js");
@@ -37031,14 +37036,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var node_html_parser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! node-html-parser */ "./node_modules/node-html-parser/dist/index.js");
-/* harmony import */ var node_html_parser__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(node_html_parser__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _lib_posts__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/posts */ "./lib/posts.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var node_html_parser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! node-html-parser */ "./node_modules/node-html-parser/dist/index.js");
+/* harmony import */ var node_html_parser__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(node_html_parser__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _lib_posts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../lib/posts */ "./lib/posts.js");
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-// import Link from 'next/link'
+
 
 
 
@@ -37047,11 +37054,11 @@ var Post = function Post(_ref) {
   var params = _ref.params;
 
   var contentHtml = function contentHtml() {
-    var root = Object(node_html_parser__WEBPACK_IMPORTED_MODULE_2__["parse"])(params.contentHtml);
+    var root = Object(node_html_parser__WEBPACK_IMPORTED_MODULE_3__["parse"])(params.contentHtml);
     var original_title_str = root.querySelector('h1').toString();
     var title = root.querySelector('h1');
-    title.set_content("<a href=\"".concat("" + "/posts/".concat(params.id), "\" >").concat(title.innerHTML, "</a>"));
-    console.log('contentHtml', original_title_str, title.toString());
+    title.set_content("<a href=\"".concat("" + "/posts/".concat(params.id), "\" >").concat(title.innerHTML, "</a>")); // console.log('contentHtml',original_title_str, title.toString())
+
     return params.contentHtml.replace(original_title_str, title.toString());
   };
 
@@ -37077,7 +37084,7 @@ Post.getStaticProps = function _callee(_ref2) {
         case 0:
           params = _ref2.params;
           _context.next = 3;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_lib_posts__WEBPACK_IMPORTED_MODULE_4__["getPostData"])(params.id));
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_lib_posts__WEBPACK_IMPORTED_MODULE_5__["getPostData"])(params.id));
 
         case 3:
           postData = _context.sent;
@@ -37098,14 +37105,23 @@ Post.getStaticProps = function _callee(_ref2) {
 var __N_SSG = true;
 function Home(_ref3) {
   var posts = _ref3.posts;
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, __jsx("div", null, posts.map(function (post) {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], null, __jsx("div", null, posts.map(function (post) {
     return Post(post);
-  })));
+  })), __jsx("hr", {
+    className: "mb-1"
+  }), __jsx("div", {
+    className: "w-100 text-right"
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    as: ""
+  }, __jsx("a", null, __jsx("i", {
+    className: "fas fa-home"
+  })))));
 }
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!********************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Feakarin%2Fwork%2Fblog%2Fpages%2Findex.js ***!
   \********************************************************************************************************************/
@@ -37117,7 +37133,7 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!********************!*\
   !*** fs (ignored) ***!
   \********************/
@@ -37139,5 +37155,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

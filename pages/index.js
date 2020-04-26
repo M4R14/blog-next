@@ -39,14 +39,6 @@ export default function Home({ posts }) {
       <div>
         { posts.map(post => Post(post)) }
       </div>
-      <hr className="mb-1" />
-      <div className="w-100 text-right">
-        <Link href="/" as={process.env.ASSET_PREFIX} >
-          <a>
-            <i className="fas fa-home"></i>
-          </a>
-        </Link>
-      </div>
     </Layout>
   )
 }
